@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.main__container{
+  padding-top: 20px;
+  height: 500px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.overlay{
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 15px;
+  opacity: 0%;
+
+}
+
+.image__wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.image__wrapper:hover #eye-icon{
+  opacity: 1;
+}
+
+.image__wrapper:hover .overlay{
+  opacity: 50%;
+}
+
+#eye-icon{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  top: 25%;
+  opacity: 0;
+}
+
+#nft-image{
+  width: 260px;
+  height: 260px;
+  border-radius: 15px;
+}
+
+.main__container h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 19px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.main__container h1:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.main__container #description{
+  color: hsl(215, 51%, 70%);
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.price__section{
+  
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.price__section p{
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  width: 50%;
+}
+
+#ethereum-icon{
+  margin-right: 5px;
+}
+
+#clock-icon{
+  margin-right: 5px;
+}
+
+#eth-price{
+  color: hsl(178, 100%, 50%);
+}
+
+#timer{
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__container{
+  width: 260px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-top: 1px solid hsl(215, 51%, 70%);
+  padding-top: 15px;
+}
+
+.avatar{
+  background-image: url(./images/image-avatar.png);
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  
+}
+
+.footer__container > p{
+  border: 1px solid red;
+  display: inline-block;
+}
+
+.information{
+  display: flex;
+  align-items: center;
+}
+
+.information > p{
+  margin-left: 10px;
+  color: hsl(215, 51%, 70%);
+}
+
+.information #name{
+  color: white;
+}
+
+.information #name:hover{
+  color: hsl(178, 100%, 50%);
+}
