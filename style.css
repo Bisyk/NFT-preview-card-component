@@ -36,10 +36,12 @@ body{
 
 .image__wrapper:hover #eye-icon{
   opacity: 1;
+  cursor:pointer;
 }
 
 .image__wrapper:hover .overlay{
   opacity: 50%;
+  cursor:pointer;
 }
 
 #eye-icon{
@@ -67,6 +69,7 @@ body{
 
 .main__container h1:hover{
   color: hsl(178, 100%, 50%);
+  cursor:pointer;
 }
 
 .main__container #description{
@@ -77,7 +80,6 @@ body{
 }
 
 .price__section{
-  
   width: 260px;
   display: flex;
   justify-content: space-between;
@@ -148,4 +150,5 @@ body{
 
 .information #name:hover{
   color: hsl(178, 100%, 50%);
+  cursor:pointer;
 }
